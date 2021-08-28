@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.client-link {
+.client-list__link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
@@ -20,14 +20,14 @@
   }
 }
 
-.client-list-item:not(:last-child) {
+.client-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.client-icon {
+.client-list__icon {
   fill: $icons-color;
   @include mainTransition(fill);
-  .client-link:hover &,
-  .client-link:focus & {
+  .client-list__link:hover &,
+  .client-list__link:focus & {
     fill: $accent-color;
   }
 }

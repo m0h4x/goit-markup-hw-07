@@ -6,12 +6,12 @@
   line-height: 1.19;
 }
 
-.logo-color {
+.logo__color {
   color: #000000;
 }
-.other-logo-color {
+.logo-color__prefix {
   color: $accent-color;
 }
-.logo-second-color {
+.logo-color__suffix {
   color: $primary-white-color;
 }

@@ -57,27 +57,28 @@
   margin-left: auto;
 }
 
-.site-adr-item:not(:last-child) {
+.site-adr__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-adr-link {
+.site-adr__link {
   color: $secondary-text-color;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* text-decoration: none; */
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
-}
-.site-adr-link:hover,
-.site-adr-link:focus {
+  &:hover,
+  &:focus {
   color: $accent-color;
 }
-.site-adr-link:hover .site-adr-icon,
-.site-adr-link:focus .site-adr-icon {
+}
+
+.site-adr__link:hover .site-adr-icon,
+.site-adr__link:focus .site-adr-icon {
   fill: $accent-color;
 }
 .site-adr-icon {
@@ -87,8 +88,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.site-nav__item {
+  position: relative;
+}
 
-.site-nav-link {
+.site-nav__item + .site-nav__item {
+  margin-left: 50px;
+}
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -98,22 +105,19 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include mainTransition(color);
+
+  &:hover,
+  &:focus {
+  color: $accent-color;
 }
-.site-nav-link:hover,
-.site-nav-link:focus,
+
+}
+
 .current {
   color: $accent-color;
 }
-.site-nav-item {
-  position: relative;
-}
 
-.site-nav-item + .site-nav-item {
-  margin-left: 50px;
-}
 .site-adr .link-current {
   color: $accent-color;
   padding-top: 20px;
