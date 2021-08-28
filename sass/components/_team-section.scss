@@ -1,5 +1,5 @@
 .team-list-item {
-  background: var(--primary-white-color);
+  background: $primary-white-color;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -12,7 +12,7 @@
   padding: 30px 0;
 }
 .title {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -20,7 +20,7 @@
   margin-bottom: 10px;
 }
 .title-sks {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
@@ -32,10 +32,10 @@
   font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 .title-p {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -45,14 +45,14 @@
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .paragraph {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   text-align: center;
 }
 .team-icon-item:not(:last-child) {
@@ -71,25 +71,25 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-icon:hover,
 .team-list-icon:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 .team-list-icon:hover .site-icon,
 .team-list-icon:focus .site-icon {
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 }
 .site-icon {
-  fill: var(--icons-color);
+  fill: $icons-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .par-sec {
-  background-color: var(--por-sel-background);
+  background-color: $por-sel-background;
 }

@@ -7,7 +7,7 @@
   margin-right: 8px;
 }
 .por-sel .link {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -15,16 +15,16 @@
 }
 .por-sel .link:hover,
 .por-sel .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .por-sel .link-current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .portfolio-navigation {
   border: transparent;
-  color: var(--primary-text-color);
-  background-color: var(--por-sel-background);
+  color: $primary-text-color;
+  background-color: $por-sel-background;
   padding: 6px 22px;
   transition-property: background-color, color, box-shadow, border-radius;
   transition-duration: 250ms;
@@ -34,8 +34,8 @@
 .portfolio-navigation:hover,
 .portfolio-navigation:focus,
 .por-nav-cur {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  background-color: $accent-color;
+  color: $primary-white-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }

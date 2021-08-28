@@ -21,11 +21,11 @@
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .site-nav .link-current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .main-nav,
 .nav-flex {
@@ -38,7 +38,7 @@
 
 .adres-icon {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: $secondary-text-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,7 +47,7 @@
 .adres-link {
   display: flex;
   align-items: center;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -61,7 +61,7 @@
   margin-right: 50px;
 }
 .site-adr-link {
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -74,15 +74,15 @@
 }
 .site-adr-link:hover,
 .site-adr-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .site-adr-link:hover .site-adr-icon,
 .site-adr-link:focus .site-adr-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .site-adr-icon {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: $secondary-text-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -93,7 +93,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -105,7 +105,7 @@
 .site-nav-link:hover,
 .site-nav-link:focus,
 .current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .site-nav-item {
   position: relative;
@@ -115,7 +115,7 @@
   margin-left: 50px;
 }
 .site-adr .link-current {
-  color: var(--accent-color);
+  color: $accent-color;
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;

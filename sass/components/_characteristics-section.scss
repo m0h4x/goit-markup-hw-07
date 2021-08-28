@@ -20,7 +20,7 @@
 }
 .characteristics-list .title,
 .specialisation-list .title {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -28,12 +28,12 @@
 }
 
 .characteristics-list .link {
-  color: var(--accent-color);
+  color: $accent-color;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .icons {
   display: flex;

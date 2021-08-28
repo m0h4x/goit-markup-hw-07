@@ -17,13 +17,13 @@
 }
 .client-link:hover,
 .client-link:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 .client-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .client-icon {
-  fill: var(--icons-color);
+  fill: $icons-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -31,5 +31,5 @@
 
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
