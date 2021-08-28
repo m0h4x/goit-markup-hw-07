@@ -75,21 +75,28 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
-.team-list-icon:hover,
-.team-list-icon:focus {
-  background-color: $accent-color;
-}
-.team-list-icon:hover .site-icon,
-.team-list-icon:focus .site-icon {
-  fill: $primary-white-color;
-}
+
 .site-icon {
   fill: $icons-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .team-list-icon:hover &,
+  .team-list-icon:focus & {
+    fill: $primary-white-color;
+  }
 }
 .par-sec {
   background-color: $por-sel-background;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -30px;
 }

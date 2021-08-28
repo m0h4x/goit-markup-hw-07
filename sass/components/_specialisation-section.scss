@@ -1,12 +1,15 @@
-.specialisation-list,
-.team-list {
+.specialisation-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-right: -30px;
-  /* margin-bottom: -30px; */
 }
-.characteristics-list .title,
+.spec-item {
+  position: relative;
+  width: 370;
+  margin-right: 30px;
+  z-index: 1;
+}
 .specialisation-list .title {
   color: $title-text-color;
   font-weight: bold;
@@ -15,7 +18,7 @@
   text-transform: uppercase;
 }
 
-.services-list-title {
+.spec-list-title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -33,12 +36,7 @@
 .spec-sec {
   padding-top: 0;
 }
-.spec-item {
-  position: relative;
-  width: 370;
-  margin-right: 30px;
-  z-index: 1;
-}
+
 .out-specs {
   margin-right: 30px;
 }

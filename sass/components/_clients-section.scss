@@ -1,4 +1,4 @@
-.client-section-list {
+.client-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,28 +8,26 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: border-color;
+
+  @include centeredFlex();
+
+  @include mainTransition(border-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
-.client-link:hover,
-.client-link:focus {
-  border-color: $accent-color;
-}
+
 .client-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .client-icon {
   fill: $icons-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
-  fill: $accent-color;
+  @include mainTransition(fill);
+  .client-link:hover &,
+  .client-link:focus & {
+    fill: $accent-color;
+  }
 }
