@@ -6,29 +6,21 @@
 .por-sel__item:not(:last-child) {
   margin-right: 8px;
 }
-.por-sel .link {
-  color: $primary-white-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
+.port-sel__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
-.por-sel .link:hover,
-.por-sel .link:focus {
-  color: $accent-color;
-}
-
-.por-sel .link-current {
-  color: $accent-color;
-}
-.portfolio-navigation {
+.port-sel__button {
   border: transparent;
   color: $primary-text-color;
   background-color: $por-sel-background;
   padding: 6px 22px;
+
   transition-property: background-color, color, box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: $accent-color;

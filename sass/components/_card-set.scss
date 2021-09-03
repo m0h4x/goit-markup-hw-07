@@ -6,6 +6,19 @@
   margin-bottom: -30px;
 }
 
+.card-set__title {
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.card-set__descr {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
 
 .card-set_item {
   width: calc(100% / 3 - 30px);
